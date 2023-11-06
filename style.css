@@ -1,0 +1,30 @@
+@font-face {
+    font-family: myFont;
+    src: url(resources/Myfont-Regular.ttf);
+}
+
+h1 {
+    font-family: myFont;
+}
+
+nav li{
+    display: inline;
+    margin-right: 10px;
+    float: right;
+};
+
+.aboutme {
+
+};
+
+.projects {
+    
+};
+
+.skills {
+    
+};
+
+.contact {
+    
+};
