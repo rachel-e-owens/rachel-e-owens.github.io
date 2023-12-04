@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    background-color: #f2f2f2;
+    background-color: #3F3F3F;
     margin: 0;
     padding: 0;
 }
@@ -37,12 +37,12 @@ header {
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: #34495E;
-    color: #fff;
+    background-color: #f2f2f2;
+    color: #3F3F3F;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    box-shadow: 0px 0px 2px 2px #f2f2f2;
 }
 
 button:hover {
@@ -50,21 +50,24 @@ button:hover {
 }
 
 a {
-    text-decoration: none; 
-    color: #9800a0;
+    text-decoration: none;
+    color: #88C8CB;
+    cursor: pointer;
 }
 
 a:hover {
-    color: #01a049;
+    color: #C08C8C;
 }
 
 h1 {
     font-family: myFont;
     text-align: center;
+    color: white;
 }
 
 p {
     font-family: 'Cutive Mono', monospace;
+    color: white;
 }
 
 .content {
@@ -96,7 +99,7 @@ p {
     max-width: auto;
     border-radius: 10%;
     margin: 10px;
-    transition: ease;
+    transition: 0.75s;
 }
 
 .skill_logos:hover {

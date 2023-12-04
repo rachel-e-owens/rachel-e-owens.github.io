@@ -8,69 +8,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
-    <header>
-    <nav id="navbar" class="navbar">
-        <img id="logo" src="/resources/me_logo.jpeg" ALT="logo graphic">
-        <ul>
-            <li><a href="#contact">Contact Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#aboutme">About Me</a></li>
-        </ul>
-    </nav>
-</header>
 </head>
 <body class="main">
-    <h1>About Me</h1>
-    <section class="aboutme" id="aboutme">
-        <p>Some information about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Elementum curabitur vitae nunc sed velit dignissim. 
-            Ut faucibus pulvinar elementum integer. Velit euismod in pellentesque massa. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo.
-             Leo vel orci porta non. Laoreet sit amet cursus sit amet dictum sit amet. 
-             Sit amet justo donec enim. Amet porttitor eget dolor morbi non. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. 
-             Cum sociis natoque penatibus et magnis.</p>
-        <img id="headshot" src="/resources/headshot.jpg" ALT="headshot">
-    </section>
+    <header>
+        <!--<img class="logo" id="logo" src="/resources/me_logo.jpeg" alt="logo graphic"> -->
+        <h1 class="logo" id="name">RACHEL OWENS</h1>        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <button class="theme-switcher" type-="button" id="theme" onclick="clickHandler()">Dark Mode</button>
 
-    <h1>Projects</h1>
-    <section class="projects" id="projects">
-        <p> TO FILL IN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Elementum curabitur vitae nunc sed velit dignissim. 
-            Ut faucibus pulvinar elementum integer. Velit euismod in pellentesque massa. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo.
-             Leo vel orci porta non. Laoreet sit amet cursus sit amet dictum sit amet. 
-             Sit amet justo donec enim. Amet porttitor eget dolor morbi non. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. 
-             Cum sociis natoque penatibus et magnis.</p>
-    </section>
+        <script>
+            function clickHandler() {
+                var theme = document.getElementsByTagName('link')[0];
+                var button = document.querySelector('#theme');
+            
+                if (theme.getAttribute('href') == 'style.css') {
+                    theme.setAttribute('href', 'dark.css');
+                    button.innerHTML = 'Light Mode';
+                }
+                else {
+                    theme.setAttribute('href', 'style.css');
+                    button.innerHTML = 'Dark Mode';
+                };
+            }
+        </script>
+    </header>
+    
+    <div class="content">
+        <h1>About Me</h1>
+        <br>
+        <section class="aboutme" id="aboutme">
+            <p>Some information about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Elementum curabitur vitae nunc sed velit dignissim. 
+                Ut faucibus pulvinar elementum integer. Velit euismod in pellentesque massa. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo.
+                Leo vel orci porta non. Laoreet sit amet cursus sit amet dictum sit amet. 
+                Sit amet justo donec enim. Amet porttitor eget dolor morbi non. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. 
+                Cum sociis natoque penatibus et magnis.</p>
+            <img id="headshot" src="/resources/headshot.jpg" ALT="headshot">
+        </section>
+        <br>
+        <br>
 
-    <h1 class="headers">Skills</h1>
-    <section class="skills" id="skills">
-        <img class="skill_logos" src="/resources/skills_logos/ansible.png" ALT="Ansible Logo">
-        <img class="skill_logos" src="/resources/skills_logos/aws.png" ALT="AWS Logo">
-        <img class="skill_logos" src="/resources/skills_logos/html.png" ALT="HTML Logo">
-        <img class="skill_logos" src="/resources/skills_logos/java.png" ALT="Java Logo">
-        <img class="skill_logos" src="/resources/skills_logos/javascript.png" ALT="Javascript Logo">
-        <img class="skill_logos" src="/resources/skills_logos/mysql.png" ALT="MySQL Logo">
-        <img class="skill_logos" src="/resources/skills_logos/postgres.png" ALT="postgres Logo">
-        <img class="skill_logos" src="/resources/skills_logos/python.png" ALT="Python Logo">
-        <img class="skill_logos" src="/resources/skills_logos/reactjs.png" ALT="ReactJS Logo">
-    </section>
+        <h1>Projects</h1>
+        <br>
+        <section class="projects" id="projects">
+            <p> TO FILL IN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Elementum curabitur vitae nunc sed velit dignissim. 
+                Ut faucibus pulvinar elementum integer. Velit euismod in pellentesque massa. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo.
+                Leo vel orci porta non. Laoreet sit amet cursus sit amet dictum sit amet. 
+                Sit amet justo donec enim. Amet porttitor eget dolor morbi non. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. 
+                Cum sociis natoque penatibus et magnis.</p>
+        </section>
+        <br>
+        <br>
 
-    <h1>Contact Me</h1>
-    <section class="contact" id="contact">
-        <form>
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="comments">Comments:</label><br>
-            <textarea rows="10" cols="30" name="comment">Please add any comments you may have.</textarea><br>
-            <input type="submit">
-        </form>
+        <h1 class="headers">Skills</h1>
+        <br>
+        <section class="skills" id="skills">
+            <img class="skill_logos" src="/resources/skills_logos/ansible.png" ALT="Ansible Logo">
+            <img class="skill_logos" src="/resources/skills_logos/aws.png" ALT="AWS Logo">
+            <img class="skill_logos" src="/resources/skills_logos/html.png" ALT="HTML Logo">
+            <img class="skill_logos" src="/resources/skills_logos/java.png" ALT="Java Logo">
+            <img class="skill_logos" src="/resources/skills_logos/javascript.png" ALT="Javascript Logo">
+            <img class="skill_logos" src="/resources/skills_logos/mysql.png" ALT="MySQL Logo">
+            <img class="skill_logos" src="/resources/skills_logos/postgres.png" ALT="postgres Logo">
+            <img class="skill_logos" src="/resources/skills_logos/python.png" ALT="Python Logo">
+            <img class="skill_logos" src="/resources/skills_logos/reactjs.png" ALT="ReactJS Logo">
+        </section>
+        <br>
+        <br>
 
-    </section>
+        <h1>Contact Me</h1>
+        <br>
+        <section class="contact" id="contact">
+            <!-- <form>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="comments">Comments:</label><br>
+                <textarea rows="10" cols="30" name="comment">Please add any comments you may have.</textarea><br>
+                <input type="submit">
+            </form> -->
+            <p><strong>EMAIL:</strong> rachel.e.owens@gmail.com  
+            <strong>LINKEDIN:</strong>: <a href="https://www.linkedin.com/in/rachel-owens-336b37128">www.linkedin.com/in/rachel-owens-336b37128</a>  
+            <strong>GITHUB:</strong> <a href="https://github.com/rachel-e-owens">https://github.com/rachel-e-owens</a></p>
 
+        </section>
+    </div>
     <footer>
 
     </footer>
